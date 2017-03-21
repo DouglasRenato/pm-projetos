@@ -1,0 +1,90 @@
+body {
+    background-color: #745cc1;
+    padding-top: 65px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased; /*Código no body para deixar letras
+                                           e tudo mais parecido com layouts feitos por designers*/    
+}
+
+.login {
+    width: 247px;
+    height: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login .logo {
+    background: url("logo-p1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo .logo-p2 {
+    padding-top: 4px;
+    width: 70px;
+    height: 70px;
+}
+
+.campos .email, .senha {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+    width: 240px;
+    background-color: transparent;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 1px;
+    padding: 3px;  
+}
+
+.campos .email::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.campos .senha::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.campos .botao {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #39393a;
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 3px #39393a;
+    margin-bottom: 6px;
+}
+
+.campos .link-senha {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-shadow: 0px 2px 2px #39393a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.link-senha a {
+    text-decoration:none;
+    color: #ffffff;
+    
+}

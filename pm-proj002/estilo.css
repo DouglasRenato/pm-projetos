@@ -1,0 +1,57 @@
+/* Desenvolvedor: Douglas Renato */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #e6e6e6;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#div001 {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin: 10px;
+    box-shadow: 0px 1px 1px #666666;
+}
+
+a {
+    text-decoration:none; 
+}
+
+img {
+    height: 168px;
+    border-radius: 2px;
+}
+
+#div002 {
+    font-size: 14px;
+    padding: 10px;
+}
+
+#h4001, #p001 {
+    text-transform: uppercase;
+    display:inline;
+    margin-bottom: 10px;
+}
+
+#p001 {
+    font-size: 11px;
+    color: #999999;
+    margin-left: 10px;   
+}
+
+h2 {
+    font-size: 16px;
+    color: #b5000d;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+#p002 {
+    margin-bottom: 10px;
+}

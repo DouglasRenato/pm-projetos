@@ -1,0 +1,32 @@
+* { /* Zera todas as medidas pradões do html - boas praticas */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Arial";
+    background-color: #ecf0f1;
+    font-size: 18px; 
+    padding: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+li {
+    list-style: none;
+    background-color: #9b59b6;
+    color: white;
+    padding: 12px;
+    border-bottom: solid 12px;
+    border-bottom-color: #ecf0f1;
+}
