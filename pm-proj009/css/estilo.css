@@ -3,7 +3,7 @@ html {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-image: url(/imagens/bg-principal.png);
+    background-image: url(imagens/bg-principal.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
