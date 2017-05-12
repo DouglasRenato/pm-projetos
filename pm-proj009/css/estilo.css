@@ -1,0 +1,245 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: url(/imagens/bg-principal.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: 'muliregular';
+    color: #777879;
+}
+
+/*------------------------------------*/
+/*---CHECKOUT---*/
+div#checkout {
+    width: 680px;
+    background-color: #fff;
+    border: solid 1px #ebebeb;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.27);
+}
+
+/*------------------------------------*/
+/*---HEADER---*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #fff;
+    border-bottom: solid 1px #ebebeb;
+}
+header div {
+    display: flex;
+    align-items: center;    
+}
+header div h1 {
+    color: #5e5f5f;
+    font-family: 'muliextrabold';
+    font-size: 18px;
+    margin: 0 -15px 0 15px;
+}
+header div nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+header div nav .li-bold {
+    font-family: 'muliextrabold';
+}
+header div.fechar {
+    margin: 10px;
+}
+
+/*------------------------------------*/
+/*---PRINCIPAL---*/
+section#principal {
+    display: flex;
+    width: 680px;
+}
+
+/*------------------------------------*/
+/*---PAGAMENTO---*/
+section#principal div.pagamento {
+    width: 60%;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+/*---opcoes cartoes---*/
+section#principal div.opcoes-cartoes {
+    margin-bottom: 15px;
+}
+section#principal div.opcoes-cartoes h2 {
+    font-size: 16px;
+    margin: 0;
+}
+section#principal div.opcoes-cartoes ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: 10px 0 0 0; padding: 0; border: 0;
+}
+section#principal div.opcoes-cartoes li {
+    padding: 10px;
+    margin: 1px;
+}
+section#principal div.opcoes-cartoes li:hover {
+    background-color: #f5f9fd;
+    /*
+    usado para inserir uma borda por trás do elemento fazendo com que ele não aumente
+    de tamanho (alternativa prática ao border...)
+    */
+    box-shadow: inset 0px 0px 3px #d1e2f6;
+    border-radius: 4px;
+}
+section#principal div.opcoes-cartoes li label {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*---novo cartao---*/
+section#principal div.novo-cartao fieldset {
+    border: none;
+    padding: 0; border: 0; margin: 0;
+    text-align: center;
+}
+section#principal div.novo-cartao fieldset legend {
+    font-size: 16px;
+    width: 100%;
+    border-bottom: solid 1px #eaeaea;
+    padding-bottom: 5px;
+    text-align: left;
+    margin: 10px 0px 15px 0px;
+    font-weight: 600;
+}
+section#principal div.novo-cartao fieldset ul {
+    list-style: none;
+    margin: 0; padding: 0; border: 0;
+    display:flex;
+    flex-direction: column;
+}
+section#principal div.novo-cartao li input {
+    margin: 0; padding: 0; border: 1;
+    width: 270px;
+    height: 40px;
+    margin: 15px;
+    padding-left: 15px;
+    border: solid 1px #dedede;
+}
+section#principal div.novo-cartao input.ano {
+    width: 140px;
+}
+section#principal div.novo-cartao input.cvc {
+    width: 80px;
+}
+section#principal div.novo-cartao li.checkbox {
+    width: 290px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+section#principal div.novo-cartao li.checkbox input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+::-webkit-input-placeholder {
+    color: #c4cbd0;
+}
+section#principal button {
+    width: 290px;
+    padding: 12px;
+    background-color: #84d654;
+    border: none;
+    color: #fff;
+    font-family: 'muliextrabold';
+    border-radius: 2px;
+    margin: 20px;
+}
+
+/*------------------------------------*/
+/*---CARRINHO---*/
+section#principal div.carrinho {
+    width: 40%;
+    background-color: #ebebeb;
+    padding: 25px 15px 15px 15px;
+    border-left: solid 1px #dddcdd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*---produtos---*/
+div.carrinho div.produtos ul {
+    list-style: none;
+    padding: 0; margin: 0; border: 0;
+}
+div.carrinho div.produtos li {
+    display: flex;
+    border-bottom: solid 1px #dddcdd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+div.carrinho div.produtos li:last-child {
+    border-bottom: none;
+}
+div.carrinho div.produto-info span {
+    font-size: 12px;
+    font-family: 'muliextrabold';
+    margin-bottom: 3px;
+}
+div.carrinho span {
+    font-size: 12px;
+    font-family: 'muliextrabold';
+}
+div.carrinho div.produto-info small {
+    font-size: 10px;
+    font-family: 'muliextralight_italic';
+    margin-bottom: 3px;
+    color: #4a4a4a;
+    font-weight: 600;
+}
+div.carrinho div.produto-info small.quant-produto {
+    font-size: 10px;
+    font-family: 'muliextrabold';
+    margin-bottom: 3px;
+    color: #9c9c9c;
+}
+div.carrinho div.produtos div.produto-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5px;
+}
+
+/*---preco---*/
+div.carrinho div.preco table {
+    width: 100%;
+    font-family: 'muliregular';
+    font-size: 12px;
+}
+div.carrinho div.preco table tr {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+div.carrinho div.preco table tbody tr:first-child {
+    border-top: solid 1px #d5d3d6;
+    padding-top: 5px;
+}
+div.carrinho div.preco table tbody tr:last-child {
+    border-bottom: solid 1px #d5d3d6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+div.carrinho div.preco table tfoot {
+    font-family: 'muliextrabold';
+}
+
+
+
+
+
+

@@ -3,43 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- "viewport" usado para os elementos (fotos, textos...) ficarem de tamanho proprocional em outros dispositivos como celulares e tablets
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- usado para ativar o css linkado para o html somente quando a tela for menor que 900px. 
+    -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css">
+    <link rel="stylesheet" media="(max-width: 750px)" href="mobile.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <title>Projeto 006</title>
 </head>
 
 <body>
-   <div class="logo">
-       <img src="logo-playcode.png" alt="logo">
-   </div>
-    <div class="cartoes">
-       <div class="cartao">
-          <img src="miniatura01.png" alt="miniatura">
-          <h2>Sou velho para ser programador?</h2>
-       </div>
-       <div class="cartao">
-          <img src="miniatura02.png" alt="miniatura">
-          <h2>5 mentiras que impedem que você aprenda a programar</h2>
-       </div>
-       <div class="cartao">
-          <img src="miniatura03.png" alt="miniatura">
-          <h2>Não cometa esse erro na faculdade de computação</h2>
-       </div>
-       <div class="cartao">
-          <img src="miniatura04.png" alt="miniatura">
-          <h2>Aprender a programar é o novo aprender a escrever</h2>
-       </div>
-       <div class="cartao">
-          <img src="miniatura05.png" alt="miniatura">
-          <h2>O que é linux e como iniciar</h2>
-       </div>
-       <div class="cartao">
-          <img src="miniatura06.png" alt="miniatura">
-          <h2>O que é uma boa ideia para startup?</h2>
-       </div>
+   <div class="container">
+        <h1 class="logo">
+           <img src="logo-playcode.png" alt="Playcode">
+       </h1>
+        <div class="cartoes">
+           <div class="cartao">
+              <img src="miniatura01.png" alt="miniatura">
+              <h2>Sou velho para ser programador?</h2>
+           </div>
+           <div class="cartao">
+              <img src="miniatura02.png" alt="miniatura">
+              <h2>5 mentiras que impedem que você aprenda a programar</h2>
+           </div>
+           <div class="cartao">
+              <img src="miniatura03.png" alt="miniatura">
+              <h2>Não cometa esse erro na faculdade de computação</h2>
+           </div>
+           <div class="cartao">
+              <img src="miniatura04.png" alt="miniatura">
+              <h2>Aprender a programar é o novo aprender a escrever</h2>
+           </div>
+           <div class="cartao">
+              <img src="miniatura05.png" alt="miniatura">
+              <h2>O que é linux e como iniciar</h2>
+           </div>
+           <div class="cartao">
+              <img src="miniatura06.png" alt="miniatura">
+              <h2>O que é uma boa ideia para startup?</h2>
+           </div>
+        </div>
     </div>
 </body>
 

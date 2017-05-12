@@ -10,8 +10,9 @@
 <body>
     <table>
        <caption>Relátório de Faturamento</caption>
+        <thead>
         <tr> 
-            <td class="checkbox"><input type="checkbox"></td>
+            <th><input type="checkbox"></th>
             <th>Coluna 1</th>
             <th>Coluna 2</th>
             <th>Coluna 3</th>
@@ -20,8 +21,10 @@
             <th>Coluna 6</th>
             <th>Coluna 7</th>
         </tr>
+        </thead>
+        <tbody>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -31,7 +34,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -41,7 +44,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -51,7 +54,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -61,7 +64,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -71,7 +74,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -81,7 +84,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -91,7 +94,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -101,7 +104,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -111,7 +114,7 @@
             <td>Texto H</td>
         </tr>
         <tr class="linhas">
-            <td class="checkbox"><input type="checkbox"></td>
+            <td><input type="checkbox"></td>
             <td>Texto A</td>
             <td>Texto B</td>
             <td>Texto C</td>
@@ -120,7 +123,11 @@
             <td>Texto G</td>
             <td>Texto H</td>
         </tr>
+        </tbody>
+        <tfoot>
         <tr class="select_registros_paginas">
+          <!-- "colspan = usado para escolher quantos espaços a tag vai ocupar...
+          -->
            <td colspan="8">
                 <label for=""> Registros por página: 
                    <select>
@@ -130,10 +137,11 @@
                 </select>
                 </label>
                <span>1-10 de 100</span> 
-                <img class="setas" src="imagens/seta_esquerda.png" alt="">
-                <img class="setas" src="imagens/seta_direita.png" alt="">
+                <a href="#"> <img class="setas" src="imagens/seta_esquerda.png" alt=""></a>
+                <a href="#"><img class="setas" src="imagens/seta_direita.png" alt=""></a>
             </td>
         </tr>
+        </tfoot>
     </table>
 </body>
 </html>

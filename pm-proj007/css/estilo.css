@@ -1,0 +1,339 @@
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    background-image: url(/imagens/logo-titum-transp.png);
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 76px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+}
+
+header h1 span {
+    visibility: hidden;
+}
+
+header .container {
+    /*
+    "display: flex + justify-content: space-between"
+    usado para alinhar os elementos na mesma linha porem em lado separados
+    */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+
+header nav li {
+    list-style: none;
+    /*
+    usado para alinhar os elementos em linha sem perder a altura e largura
+    */
+    display: inline-block;
+}
+
+header {
+    margin-bottom: -105px
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px;
+}
+
+header nav li:last-child {
+    border: solid 1px #fff;
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+
+
+
+section#topo {
+    background-image: url(/imagens/fundo-sessao-conheca.png);
+    height: 700px;
+    /*
+    usado para centralizar a imagem de fundo e deixa-la completa no elemento
+    */
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+section#topo .textoEntrada {
+    color: #fff;
+    padding-top: 250px;
+    width: 430px;
+    text-align: center;
+}
+
+section#topo .textoEntrada h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+section#topo .textoEntrada p {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+
+.botao {
+    background-color: #ff397e;
+    /*
+    usado nesse caso para preencher todo o espaço (largura e altura) dentro do elemento
+    */
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 6px 0 0 #a32751;
+    font-size: 36px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+section#conheca .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+section#conheca .oquee {
+    padding: 30px 50px 50px 90px;
+}
+
+section#conheca .oquee h2 {
+    font-size: 36px;
+}
+
+section#conheca .oquee p {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+section#conheca .oquee a {
+    font-size: 30px;
+    width: 60%;
+}
+
+
+
+
+section#depoimento .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+section#depoimento {
+    background-color: #ebe7fb;
+    border-top: solid 3px #511099;
+    padding: 90px 50px 90px 50px;
+}
+
+section#depoimento p {
+    width: 90%;
+    font-size: 24px;
+}
+
+
+
+section#convite .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 5px 150px 5px;
+}
+
+section#convite {
+    background-image: url(/imagens/fundo-sessao-convite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#convite form {
+    text-decoration: none;
+    padding: 10px;
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+}
+
+section#convite input {
+    padding: 30px;
+    width: 67%;
+    background-color: transparent;
+    border: none;
+}
+
+section#convite button {
+    background-image: url(/imagens/imagem-sessao-convite-botao_captura_email.png);
+    background-color: transparent;
+    border: none;
+    height: 43px;
+    width: 86px
+}
+
+section#convite span {
+    visibility: hidden;
+}
+
+
+
+footer {
+    background-color: #2a0157;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+    border-top: 3px solid;
+    font-size: 18px;
+}
+
+/*--------------------------mobile---------------------------*/
+@media (max-width: 750px){
+    
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header {
+        margin-bottom: -300px
+    }
+    
+    header nav li {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    
+    section#topo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    section#topo .textoEntrada {
+        color: #fff;
+        padding: 350px 10px 10px 10px;
+        width: 90%;
+        text-align: center;
+    }
+    
+    section#conheca .oquee a {
+    font-size: 30px;
+    width: 70%;
+}
+    
+    
+    
+    section#conheca .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:  10px 10px 70px 10px;
+    }
+    
+    section#conheca img {
+        width: 100%;
+    }
+
+    section#conheca .oquee {
+        padding: 10px;
+        text-align: center;
+    }
+
+    section#conheca .oquee h2 {
+        font-size: 36px;
+    }
+
+    section#conheca .oquee p {
+        font-size: 24px;
+    }
+
+    section#conheca .oquee a {
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    
+    
+    section#convite .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 5px 150px 5px;
+    }
+
+    section#convite {
+        background-image: url(/imagens/fundo-sessao-convite.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section#convite form {
+        text-decoration: none;
+        padding: 10px;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    section#convite input {
+        padding: 25px;
+        width: 75%;
+        background-color: transparent;
+        border: none;
+    }
+
+    section#convite button {
+        background-image: url(/imagens/imagem-sessao-convite-botao_captura_email.png);
+        background-color: transparent;
+        border: none;
+        height: 43px;
+        width: 86px;
+        margin: 10px
+    }
+
+    section#convite span {
+        visibility: hidden;
+    }
+}

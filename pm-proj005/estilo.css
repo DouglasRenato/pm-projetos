@@ -33,13 +33,17 @@ tr {
     border-bottom: 1px solid #e8e8e8;
 }
 
+/* pseudo codigo para criar o efeito "hover" ao passar o mouse por cima do elemento
+*/
 .linhas:hover {
     background-color: #eeeeee;
 }
 
-table .checkbox {
+/* pseudo código para pegar apenas os primeiros elementos de cada tag sem precisar
+criar uma class dentro de cada um
+*/
+table thead th:first-child, tbody td:first-child {
     text-align: center;
-    border-color: #fff;
 }
 
 caption {
@@ -57,7 +61,8 @@ table .select_registros_paginas, label, span, select{
      text-align: right;
      font-size: 12px;
      border: transparent;
-     color: #868686;
+     color: #000000;
+     opacity: 0.7; 
 }
 
 table .setas, span {
@@ -65,5 +70,12 @@ table .setas, span {
 }
 
 table .setas {
-    opacity:0.5;
+    /* usado para diminuir a opacidade.
+    Outra alternativa é usar o 
+    "color: rgba(0, 0, 0, 0.5);"
+    Valores min e max: color: rgba(0-255, 0-225, 0-255, 0-1);
+    mas em letras gera uma pequena
+    sensação de afinamento na expessura da letra.
+    */
+    opacity: 0.5; 
 }
