@@ -10,7 +10,7 @@ body {
 
 header h1 {
     margin: 0;
-    background-image: url(imagens/logo-titum-transp.png);
+    background-image: url(/imagens/logo-titum-transp.png);
     background-repeat: no-repeat;
     width: 177px;
     height: 76px;
@@ -71,7 +71,7 @@ header nav li:last-child {
 
 
 section#topo {
-    background-image: url(imagens/fundo-sessao-conheca.png);
+    background-image: url(/imagens/fundo-sessao-conheca.png);
     height: 700px;
     /*
     usado para centralizar a imagem de fundo e deixa-la completa no elemento
@@ -172,7 +172,7 @@ section#convite .container {
 }
 
 section#convite {
-    background-image: url(imagens/fundo-sessao-convite.png);
+    background-image: url(/imagens/fundo-sessao-convite.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -193,7 +193,7 @@ section#convite input {
 }
 
 section#convite button {
-    background-image: url(imagens/imagem-sessao-convite-botao_captura_email.png);
+    background-image: url(/imagens/imagem-sessao-convite-botao_captura_email.png);
     background-color: transparent;
     border: none;
     height: 43px;
@@ -303,7 +303,7 @@ footer {
     }
 
     section#convite {
-        background-image: url(imagens/fundo-sessao-convite.png);
+        background-image: url(/imagens/fundo-sessao-convite.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -325,7 +325,7 @@ footer {
     }
 
     section#convite button {
-        background-image: url(imagens/imagem-sessao-convite-botao_captura_email.png);
+        background-image: url(/imagens/imagem-sessao-convite-botao_captura_email.png);
         background-color: transparent;
         border: none;
         height: 43px;
