@@ -185,7 +185,7 @@ form label.email {
 }
 
 form li.ok {
-    background-image: url(imagens/icon-ok.png);
+    background-image: url(../imagens/icon-ok.png);
     background-repeat: no-repeat;
     background-position: top 10px right;
     width: 430px;
