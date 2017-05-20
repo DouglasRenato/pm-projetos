@@ -1,0 +1,168 @@
+html {
+    background-color: #f5f8f9;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'latoregular';
+    font-size: 15px;
+    color: #666666;
+}
+
+/*---DIV CONTAINER---*/
+div.container {
+    width: 960px;
+}
+
+/*---SECTION BARRA LATERAL---*/
+div.container section#barraLateral {
+    background-color: #3a3c40;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+/*---div apresentacaoLinks---*/
+div.container section#barraLateral div.apresentacaoLinks {
+    text-align: center;
+}
+div.container section#barraLateral div.apresentacaoLinks img {
+    width: 140px;
+    height: 140px;
+    border-radius: 3px;
+}
+div.container section#barraLateral div.apresentacaoLinks h1 {
+    font-size: 21px;
+    font-family: 'latobold';
+    color: #f5a623;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+div.container section#barraLateral div.apresentacaoLinks h2 {
+    font-family: 'latobold';
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+div.container section#barraLateral div.apresentacaoLinks .button {
+    width: 140px;
+    height: 47px;
+    background-color: #f5a623;
+    box-shadow: 0px 3px 0px #aa7c2f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'latobold';
+    border: 0;
+}
+div.container section#barraLateral div.apresentacaoLinks div.redesSociais {
+    margin: 12px 3px 35px 3px;
+}
+div.container section#barraLateral div.apresentacaoLinks div.redesSociais a {
+    text-decoration: none;
+    color: #fff;
+    margin: 3px
+}
+/*---div conhecimento---*/
+div.container section#barraLateral div.conhecimento {
+    width: 100%;
+}
+div.container section#barraLateral div.conhecimento h2 {
+    font-size: 16px;
+    color: #eeeeee;
+    font-family: 'latobold';
+    margin-bottom: 10px;
+}
+div.container section#barraLateral div.conhecimento span {
+    color: #8fa4af;
+    font-size: 12px;
+}
+div.container section#barraLateral div.conhecimento .progress {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.progress::-webkit-progress-value {
+  background-color: #eeb65a;
+}
+.progress::-moz-progress-bar {
+  background-color: #eeb65a;
+}
+
+/*---SECTION PRINCIPAL---*/
+div.container section#principal {
+    padding: 0;
+    padding: 45px;
+    background-color: #fff;
+    border-right: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+    line-height: 19px;
+    padding-bottom: 100px;
+}
+div.container section#principal div.principalTitulo {
+    font-size: 18px;
+    color: #d0021b;
+    font-family: 'latoblack';
+    display: flex;
+    align-items: baseline;
+    border-bottom: solid 1px #d0021b;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+div.container section#principal div.principalTitulo .fa {
+    margin-right: 9px;
+}
+/*---div resumo---*/
+div.container section#principal div.resumo {
+    margin-bottom: 35px;
+}
+/*---div experiencia---*/
+div.container section#principal div.experiencia {
+    margin-bottom: 35px;
+}
+div.container section#principal div.experiencia div.cadaExperiencia {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+div.container section#principal div.experiencia div.cadaExperiencia div.infosExperiencia {
+    width: 35%;
+    line-height: 17px;
+    margin-right: 25px;
+}
+div.container section#principal div.experiencia div.cadaExperiencia div.infosExperiencia h3 {
+    font-size: 17px;
+    font-family: 'latobold';
+    color: #3a3c40;
+}
+div.container section#principal div.experiencia div.cadaExperiencia div.infosExperiencia h4 {
+    color: #3a3c40;
+}
+div.container section#principal div.experiencia div.cadaExperiencia div.descricaoExperiencia {
+    width: 65%;
+}
+/*---div formacao---*/
+div.container section#principal div.formacao {
+    margin-bottom: 35px;
+}
+div.container section#principal div.formacao div.cadaFormacao {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+div.container section#principal div.formacao div.cadaFormacao div.infosFormacao {
+    width: 35%;
+    line-height: 17px;
+    margin-right: 25px;
+}
+div.container section#principal div.formacao div.cadaFormacao div.infosFormacao h3 {
+    font-size: 17px;
+    font-family: 'latobold';
+    color: #3a3c40;
+}
+div.container section#principal div.formacao div.cadaFormacao div.infosFormacao h4 {
+    color: #3a3c40;
+}
+div.container section#principal div.formacao div.cadaFormacao div.descricaoFormacao {
+    width: 65%;
+}
