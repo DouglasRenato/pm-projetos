@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Proj 011</title>
+</head>
+
+<body>
+    <section id="principal">
+        <div class="container">
+            <div class="altura">
+                <div class="conteudo">
+                    <h2>Altura em metros</h2>
+                    <div class="entrada"><input id="valor-altura" min="0" type="number" autofocus></div>
+                </div>
+            </div>
+
+            <div class="peso">
+                <div class="conteudo">
+                    <h2>Peso em quilos</h2>
+                    <div class="entrada"><input id="valor-peso" min="0" type="number"></div>
+                </div>
+            </div>
+
+            <div class="imc">
+                <div class="conteudo">
+                    <button id="botao-imc">IMC</button>
+
+                    <div class="calculado">
+                        <a id="seta-voltar" href="#"><img src="imagens/seta-voltar.png" alt="voltar"></a>
+
+                        <div class="resultados">
+                            <h3>25,35</h3>
+                            <h4>Sobrepeso</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
