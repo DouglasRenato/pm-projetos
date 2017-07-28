@@ -33,10 +33,10 @@ botaoImc.addEventListener('click', function () {
         //variaveis para guardar os locais onde serão mostrados os resultados para o usuário
         var campoResultadoImc = document.querySelector('.calculado');
         var resultadoImcValor = document.querySelector('.resultados h3');
-        var resultadoImcClassificacao = document.querySelector('.resultados h4'
+        var resultadoImcClassificacao = document.querySelector('.resultados h4');
 
         //mostra o resultado do IMC(o valor) no html. Antes ele é fixado para 1 casa depois do ponto, depois transformado em string, depois trocado o ponto para virgula para melhor apresentar o dado na tela
-        );resultadoImcValor.innerHTML = resultadoImc.toFixed(1).toString().replace('.', ',');
+        resultadoImcValor.innerHTML = resultadoImc.toFixed(1).toString().replace('.', ',');
 
         //condições para mostrar qual classifição o resultado do IMC se encaixa.
         if (resultadoImc < 16) {
