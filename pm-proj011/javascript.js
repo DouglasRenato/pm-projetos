@@ -1,13 +1,15 @@
+'use strict';
+
 //guarda o botão html em uma variavel para uso
-let botaoImc = document.querySelector('#botao-imc');
+var botaoImc = document.querySelector('#botao-imc');
 
 //cria evento no botao. Quando o botao for clicado executa a função
 botaoImc.addEventListener('click', function () {
     //criar as variaveis para guardar os inputs de entrada de dados
-    let valorAltura = document.querySelector('#valor-altura'),
+    var valorAltura = document.querySelector('#valor-altura'),
         valorPeso = document.querySelector('#valor-peso'),
-        resultadoImc;
-    
+        resultadoImc = void 0;
+
     //condições para evitar que o usuario esqueça de informar os dados nos inputs
     if (valorAltura.value == '') {
         valorAltura.focus();
@@ -22,19 +24,19 @@ botaoImc.addEventListener('click', function () {
     } else {
         //se tudo estiver preenchido corretamente, ai sim ele executa o código para gerar as informações para o usuário
         //captura o valor digitado nos inputs
-        let valorAlturaOk = parseFloat(valorAltura.value);
-        let valorPesoOk = parseFloat(valorPeso.value);
-        
+        var valorAlturaOk = parseFloat(valorAltura.value);
+        var valorPesoOk = parseFloat(valorPeso.value);
+
         //faz o calculo IMC
         resultadoImc = valorPesoOk / (valorAlturaOk * valorAlturaOk);
-        
+
         //variaveis para guardar os locais onde serão mostrados os resultados para o usuário
-        let campoResultadoImc = document.querySelector('.calculado');
-        let resultadoImcValor = document.querySelector('.resultados h3');
-        let resultadoImcClassificacao = document.querySelector('.resultados h4')
-        
+        var campoResultadoImc = document.querySelector('.calculado');
+        var resultadoImcValor = document.querySelector('.resultados h3');
+        var resultadoImcClassificacao = document.querySelector('.resultados h4'
+
         //mostra o resultado do IMC(o valor) no html. Antes ele é fixado para 1 casa depois do ponto, depois transformado em string, depois trocado o ponto para virgula para melhor apresentar o dado na tela
-        resultadoImcValor.innerHTML = resultadoImc.toFixed(1).toString().replace('.', ',');
+        );resultadoImcValor.innerHTML = resultadoImc.toFixed(1).toString().replace('.', ',');
 
         //condições para mostrar qual classifição o resultado do IMC se encaixa.
         if (resultadoImc < 16) {
@@ -54,20 +56,19 @@ botaoImc.addEventListener('click', function () {
         } else {
             resultadoImcClassificacao.innerHTML = 'Obesidade Mórbida';
         }
-        
+
         //esconde o botao IMC e mostra a div com os resultados que estava oculta pelo CSS
         botaoImc.style.display = 'none';
         campoResultadoImc.style.display = 'flex';
     }
-
 });
 
 //variavel para guardar a seta de voltar
-let setaVoltar = document.querySelector('#seta-voltar');
+var setaVoltar = document.querySelector('#seta-voltar');
 //cria o evento de click na seta de voltar
 setaVoltar.addEventListener('click', function () {
-    let botaoImc = document.querySelector('#botao-imc');
-    let campoResultadoImc = document.querySelector('.calculado');
+    var botaoImc = document.querySelector('#botao-imc');
+    var campoResultadoImc = document.querySelector('.calculado');
     //quando clicado esconde novamente a div com os resuldo e mostra o botao IMC para o usuário usar novamente a calculadora
     campoResultadoImc.style.display = 'none';
     botaoImc.style.display = 'block';
