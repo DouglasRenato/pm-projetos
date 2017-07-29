@@ -21,6 +21,7 @@
 
 .altura .conteudo input[type="number"] {
     background-color: #3498db;
+    width: 100%
 }
 
 
@@ -43,6 +44,7 @@
 
 .peso .conteudo input[type="number"] {
     background-color: #34495e;
+    width: 100%;
 }
 
 
@@ -56,6 +58,9 @@
 }
 
 .imc .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 351px;
     padding: 18px 12px 21px 12px;
