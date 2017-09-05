@@ -10,7 +10,7 @@ let clickCont = 0;
 
 // API
 let cotacaoDolarOk;
-let api = 'htts://api.fixer.io/latest?base=USD';
+let api = 'https://api.fixer.io/latest?base=USD';
 let request = new XMLHttpRequest();
 request.open('GET', api);
 request.responseType = 'json';
